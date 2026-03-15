@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod8
+  labels:
+    client: tcs
+    env: prod
+spec:
+  containers:
+    - name: cont1 
+      image: nginx
+      ports:
+        - containerPort: 80
+  nodeSelector:
+    year: '2026' 
